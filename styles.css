@@ -1,0 +1,168 @@
+
+/*/////////////////////////////////////
+            OVERALL
+/////////////////////////////////////*/
+* {
+  box-sizing: border-box;
+  /*overflow: hidden;*/
+}
+
+body {
+  margin: 0px;
+}
+
+div {
+  overflow: hidden;
+}
+
+/*/////////////////////////////////////
+            NAV
+/////////////////////////////////////*/
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.navbar * {
+  text-transform: uppercase;
+}
+
+.navbar .nav-logo img{
+  height: 45px;
+  flex: 1;
+}
+
+.navbar .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  padding-right: 47px;
+  }
+
+.navbar .nav-item {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+a.active {
+  color: #968772;
+  -webkit-transition: color 2s;
+  transition: color 2s;
+}
+
+a.nonactive {
+  color: #2B2F26;
+  -webkit-transition: color 2s;
+  transition: color 2s;
+}
+
+.nav-item a:hover {
+  color: #CD5D67;
+}
+
+/*/////////////////////////////////////
+                  Header
+/////////////////////////////////////*/
+
+header {
+  font-family: "Merriweather", serif;
+  background-color: #F2F1E8;
+  text-align: center;
+}
+
+header * {
+  margin: 0;
+}
+
+header h1 {
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 1em;
+  padding-top: 135px
+}
+
+header h2 {
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 1em;
+  padding-top: 30px;
+  padding-bottom: 65px;
+}
+
+/*/////////////////////////////////////
+                  Main
+/////////////////////////////////////*/
+
+main {
+  background-color: #F2F1E8;
+}
+
+.pic-row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.top-pics img {
+  height: 370px;
+}
+
+.bottom-pics img {
+  height: 240px;
+}
+
+.pic-row div {
+  padding: 0px 5px;
+  position: relative;
+}
+
+.pic-row img {
+  object-fit: cover;
+  width: 100%;
+  object-position: top;
+}
+
+.pic-row span {
+  font-family: 'Merriweather', serif;
+  background-color: #2B2F26;
+  position: absolute;
+  bottom: 15px;
+  color: #F5F1D7;
+  padding: 5px;
+
+}
+
+.col1 {
+  width: 20%
+}
+
+.col2 {
+  width: 40%;
+}
+
+.col3 {
+  width: 60%;
+}
+
+/*/////////////////////////////////////
+              FOOTER
+/////////////////////////////////////*/
+
+footer {
+  font-family: "Merriweather", serif;
+  background-color: #2B2F26;
+  padding: 25px 25px;
+  color: #F2F1E8;
+}

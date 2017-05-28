@@ -1,0 +1,156 @@
+
+/*/////////////////////////////////////
+            OVERALL
+/////////////////////////////////////*/
+* {
+  box-sizing: border-box;
+  /*overflow: hidden;*/
+}
+
+body {
+  margin: 0px;
+  background-image: url(../images/background-2.jpg);
+  min-height: 100vh;
+}
+
+div {
+  overflow: hidden;
+}
+
+/*/////////////////////////////////////
+            NAV
+/////////////////////////////////////*/
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.navbar * {
+  text-transform: uppercase;
+}
+
+.navbar .nav-logo img{
+  height: 45px;
+  flex: 1;
+}
+
+.navbar .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  padding-right: 47px;
+  }
+
+.navbar .nav-item {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+a.active {
+  color: #968772;
+  -webkit-transition: color 2s;
+  transition: color 2s;
+}
+
+a.nonactive {
+  color: #2B2F26;
+  -webkit-transition: color 2s;
+  transition: color 2s;
+}
+
+.nav-item a:hover {
+  color: #CD5D67;
+}
+
+/*/////////////////////////////////////
+                MAIN
+/////////////////////////////////////*/
+
+.main {
+  height: 100%;
+  font-family: "Merriweather", serif;
+  color: #131511;
+}
+
+.form-wrapper {
+  text-align: center;
+  background-color: white;
+  padding: 30px 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.form-header {
+  text-align: center;
+  font-size: 27px;
+}
+
+.form-text {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 1em;
+}
+
+.field-wrapper {
+  padding-top: 30px;
+
+}
+
+form input.field{
+  border: none;
+  border-bottom: 2px solid #968772;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  padding-bottom: 3px;
+  -webkit-transition: border-bottom 2s;
+  transition: border-bottom 2s;
+}
+
+form input.field:focus {
+  border-bottom: 2px solid #967343;
+}
+
+.submit_container {
+  padding: 1em;
+}
+
+#signupButton {
+  background-color: #968772;
+  color: #F2F1E8;
+  padding: 1em 2em;
+  border: 0;
+  font-size: 16px;
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
+}
+
+#signupButton:hover {
+  background-color: #967343;
+  color: #FFFFFF;
+}
+
+/*/////////////////////////////////////
+              FOOTER
+/////////////////////////////////////*/
+
+footer {
+  font-family: "Merriweather", serif;
+  background-color: #2B2F26;
+  padding: 25px 25px;
+  color: #F2F1E8;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+}
